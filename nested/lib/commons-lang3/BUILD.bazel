@@ -1,0 +1,7 @@
+java_library(
+    name = "commons-lang3",
+    visibility = ["//visibility:public"],
+    exports = [
+        "@commons_lang3//jar",
+    ],
+)

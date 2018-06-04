@@ -1,0 +1,11 @@
+local_repository(
+  name="parent",
+  path= "..",
+)
+
+
+load("@parent//lib:third_party.bzl", "third_party_libs")
+third_party_libs()
+
+load("//lib:third_party.bzl", "nested_third_party_libs")
+nested_third_party_libs()

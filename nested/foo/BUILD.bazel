@@ -1,0 +1,12 @@
+load("@parent//build-scripts:module.bzl", "java_library")
+
+java_library(
+    name = "foo",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//lib/commons-lang3",
+        "@parent//lib/commons-collections4",
+    ],
+)
+
+

@@ -1,0 +1,7 @@
+java_library(
+    name = "commons-collections4",
+    visibility = ["//visibility:public"],
+    exports = [
+        "@commons_collections4//jar",
+    ],
+)
